@@ -1,0 +1,121 @@
+{
+    "key": "group_60900e0aaa2f9",
+    "title": "Block: Teammitglieder-Liste",
+    "fields": [
+        {
+            "key": "field_60900ee5c75b9",
+            "label": "Alle anzeigen",
+            "name": "gw-schweiger-customer-team-showall",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Alle Teammitglieder anzeigen",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60901338056c1",
+            "label": "Teammitglied in voller breite Anzeigen",
+            "name": "gw-schweiger-customer-team-full-width",
+            "type": "true_false",
+            "instructions": "Links Bild rechts etwas mehr Platz für mehr Text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ganze Seitenbreite nutzen",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60900ec5c75b8",
+            "label": "Anzahl der Teammitglieder",
+            "name": "gw-schweiger-customer-team-amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60900ee5c75b9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_609012a3ca15c",
+            "label": "Nur Bestimmten Teammitglieder anzeigen",
+            "name": "gw-schweiger-customer-team-member-to-show",
+            "type": "post_object",
+            "instructions": "Hier können einzelne Teammitglieder ausgewählt werden, die Angezeigt werden sollen",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60900ee5c75b9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "schweiger_team"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gw-schweiger-team-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1620073945
+}

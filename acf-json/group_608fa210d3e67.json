@@ -1,0 +1,45 @@
+{
+    "key": "group_608fa210d3e67",
+    "title": "Block: Kunden-Liste",
+    "fields": [
+        {
+            "key": "field_608fa22168fc0",
+            "label": "Anzahl von gezeigten Kundenlogos",
+            "name": "gw-schweiger-customer-list-amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 9,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gw-schweiger-customer-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1620027092
+}

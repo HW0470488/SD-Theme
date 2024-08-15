@@ -1,0 +1,248 @@
+{
+    "key": "group_608075411e352",
+    "title": "Block: Projekt-Liste",
+    "fields": [
+        {
+            "key": "field_6080758dd191e",
+            "label": "Projekt-Kategorien",
+            "name": "gw-schweiger-project-list-categories",
+            "type": "taxonomy",
+            "instructions": "Ist keine Kategorie gewählt, werden alle Projekt-Kategorien berücksichtigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_6093a7737a024",
+            "label": "Alle Projekte anzeigen",
+            "name": "gw-schweiger-project-list-show-all-projects",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_608faa129f7a8",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "Alle Projekte anzeigen",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6080765bcdc0e",
+            "label": "Projekt-Kategorien anzeigen",
+            "name": "gw-schweiger-project-list-show-category",
+            "type": "true_false",
+            "instructions": "Zeigt die ausgewählten Kategorien mit Titel und Beschreibung an und zeigt dahinter die zugehörigen Projekte an. Das Projekt-Datum wird dann nicht ausgegeben.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_608faa129f7a8",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Kategorie neben Projekten anzeigen",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_608075f2cdc0d",
+            "label": "Anzahl von Projekten die insgesamt bzw. pro ausgewählter Kategorie geladen werden.",
+            "name": "gw-schweiger-project-list-amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6093a7737a024",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_608faa129f7a8",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_6080758dd191e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "",
+            "append": "Projekte",
+            "min": 1,
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_608faa129f7a8",
+            "label": "Filter anzeigen",
+            "name": "gw-schweiger-project-list-filter",
+            "type": "true_false",
+            "instructions": "Wenn ausgewählt, wird dem Besucher ein Projekt-Kategorie-Filter angezeigt.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080765bcdc0e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Kategorie-Filter anzeigen",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6114342496172",
+            "label": "Datumsanzeige",
+            "name": "gw-schweiger-project-list-datedisplaymode",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "month": "Monat",
+                "year": "Jahr"
+            },
+            "allow_custom": 0,
+            "default_value": [
+                "month",
+                "year"
+            ],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_61165be0c8b85",
+            "label": "Text für Alle-Projekte-Anzeigen-Button",
+            "name": "gw-schweiger-project-list-display-all-button-text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6093a7737a024",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_608faa129f7a8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "alle Projekte anzeigen",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6116604a21a44",
+            "label": "Sichtbare Projekte",
+            "name": "gw-schweiger-project-list-amount-visible-projects",
+            "type": "range",
+            "instructions": "Entspricht der Anzahl der Projekte, die angezeigt werden, solange nicht auf den Alle-Projekte-Anzeigen-Button geklickt wurde. Ist die Anzahl der angezeigten Projekte kleiner als die Anzahl der geladenen Projekte, wird der Alle-Projekte-Anzeigen-Button angezeigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "min": 1,
+            "max": 18,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gw-schweiger-project-list"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1629207817
+}

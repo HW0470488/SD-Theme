@@ -1,0 +1,64 @@
+{
+    "key": "group_60cc8b9a671f1",
+    "title": "Block: Kundenstimmen",
+    "fields": [
+        {
+            "key": "field_60cc8bd6ce5a6",
+            "label": "Kundenstimmen",
+            "name": "gw-schweiger-testimonials",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Kundenstimme hinzufügen",
+            "sub_fields": [
+                {
+                    "key": "field_60cc8c10ce5a7",
+                    "label": "Kundenstimme",
+                    "name": "gw-testimonial-text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gw-schweiger-testimonials-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1624018038
+}

@@ -1,0 +1,296 @@
+{
+    "key": "group_591dc67f67a54",
+    "title": "Felder Projekte",
+    "fields": [
+        {
+            "key": "field_53c96616485c9",
+            "label": "Projekt-Datum",
+            "name": "project_date",
+            "type": "date_picker",
+            "instructions": "Wann wurde das Projekt umgesetzt?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.y",
+            "return_format": "Y-m-d",
+            "first_day": 1
+        },
+        {
+            "key": "field_60939fd676310",
+            "label": "Kunden",
+            "name": "gw-project-customer",
+            "type": "text",
+            "instructions": "Der Kunde wird unter Projektkacheln angezeigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6093976fcbaf3",
+            "label": "Slogan",
+            "name": "gw-project-slogan",
+            "type": "textarea",
+            "instructions": "Wird auf Projektkacheln bei Mouseover angezeigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 1,
+            "new_lines": ""
+        },
+        {
+            "key": "field_6093b0c89a388",
+            "label": "Auszug",
+            "name": "gw-project-excerpt",
+            "type": "textarea",
+            "instructions": "Der Auszug wird unter Projekt-Kacheln angezeigt. Da der Standard-Auszug, der automatisch generiert wird, nicht anpassbar ist, sollte er hier direkt eingegeben werden.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_6093a05176313",
+            "label": "Teaserbilder",
+            "name": "gw-project-teaser-images",
+            "type": "repeater",
+            "instructions": "Teaserbilder werden für die Projekt-Kachelansicht verwendet. Wird einem Teaserbild keine Kategorie zugeordnet wird als Standard-Teaser verwendet, wenn Projekt-Kacheln ohne vorgesetzte Kategorie-Beschreibung angezeigt werden (z.B. auf Projekt-Seite).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6093a08b76314",
+                    "label": "Bild",
+                    "name": "gw-project-teaser-image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6093ddb262948",
+                    "label": "Kategorie zuordnen",
+                    "name": "gw-project-teaser-category-visiblity",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "Kategorie-Zuordnung verwenden",
+                        "0": "Allgemeines Teaserbild (keine Kategorie-Zuordnung)"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": 1,
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_6093a09b76315",
+                    "label": "Für bestimmte Kategorie anzeigen",
+                    "name": "gw-project-teaser-category",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6093ddb262948",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "field_type": "select",
+                    "allow_null": 1,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "multiple": 0
+                }
+            ]
+        },
+        {
+            "key": "field_6098fe8f4c88c",
+            "label": "Detailbilder",
+            "name": "gw-project-detail-images",
+            "type": "repeater",
+            "instructions": "Die Projekt-Detail-Bilder werden auf der Projekt-Detailseite als Kacheln unter dem Beschreibungstext des Projektes angezeigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6098fe8f4c88d",
+                    "label": "Bild",
+                    "name": "gw-project-detail-image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6098fedb4c890",
+                    "label": "Bildunterschrift",
+                    "name": "gw-project-detail-image-caption",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_53c9700fe086a",
+            "label": "Projekt Vorschaubild (unsichtbar, speichert Vorschaubilder von alten Projekten)",
+            "name": "project_thumb",
+            "type": "image",
+            "instructions": "Dieses Bild wird als Projektkachel verwendet.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53c96616485c9",
+                        "operator": "!=empty"
+                    },
+                    {
+                        "field": "field_53c96616485c9",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "schweiger_projects"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621259327
+}

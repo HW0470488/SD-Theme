@@ -1,0 +1,96 @@
+{
+    "key": "group_61014396a6459",
+    "title": "Block: Kacheln",
+    "fields": [
+        {
+            "key": "field_61014396aad7f",
+            "label": "Überschrift",
+            "name": "gw-schweiger-tile-heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_610143c98d37b",
+            "label": "Text",
+            "name": "gw-schweiger-tile-text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_610146dbc7214",
+            "label": "Overlay-Text",
+            "name": "gw-schweiger-tile-overlaytext",
+            "type": "text",
+            "instructions": "Wird sichtbar, wenn man mit der Maus über die Kachel fährt. Wird mobil ausgeblendet.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_610143dc8d37c",
+            "label": "Verlinkung",
+            "name": "gw-schweiger-tile-link",
+            "type": "link",
+            "instructions": "Link mit dem die gesamte Kachel verlinkt wird.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gw-schweiger-tile"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1627473745
+}
