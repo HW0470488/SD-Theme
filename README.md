@@ -1,1 +1,0 @@
-schweiger-design-Theme
