@@ -1,0 +1,515 @@
+# Copyright (C) 2020 Project_Name
+# This file is distributed under the same license as the Project_Name package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Project_Name\n"
+"POT-Creation-Date: 2021-05-03 21:50+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Gregor Wendland <kontakt@gewend.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: content-page.php:17 content.php:140
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content.php:69 content.php:89 content.php:99
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:196
+msgid "Schweiger Design red"
+msgstr "Schweiger Design rot"
+
+#: functions.php:201
+msgid "Main text color"
+msgstr "Standard-Textfarbe"
+
+#: functions.php:206
+msgid "Light grey"
+msgstr "Hellgrau"
+
+#: functions.php:211
+msgid "White"
+msgstr "Weiß"
+
+#: functions.php:223
+msgid "Mobile"
+msgstr ""
+
+#: functions.php:247
+msgid "Footer oben links"
+msgstr ""
+
+#: functions.php:256
+msgid "Footer oben rechts"
+msgstr ""
+
+#: functions.php:266
+msgid "Footer unten links"
+msgstr ""
+
+#: header.php:50
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:51
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: inc/functions/render-schweiger-team-list-element.php:19
+msgid "email"
+msgstr "E-Mail"
+
+#: inc/gw-register-acf-block-types.php:16
+msgid "Heading with colored accent"
+msgstr "Überschrift mit farbigem Akzent"
+
+#: inc/gw-register-acf-block-types.php:17
+msgid "Heading with colored accent."
+msgstr "Überschrift mit farbigem Akzent."
+
+#: inc/gw-register-acf-block-types.php:29
+msgid "heading, colored, schweiger"
+msgstr "überschrift, farbig, Schweiger"
+
+#: inc/gw-register-acf-block-types.php:38
+#: inc/gw-register-acf-block-types.php:39
+msgid "Project Tiles"
+msgstr "Projektkacheln"
+
+#: inc/gw-register-acf-block-types.php:51
+msgid "project, tiles, schweiger"
+msgstr "Projekt, Fliesen, Schweiger"
+
+#: inc/gw-register-acf-block-types.php:60
+#: inc/gw-register-acf-block-types.php:61
+msgid "Customer Tiles"
+msgstr "Kunden-Liste"
+
+#: inc/gw-register-acf-block-types.php:73
+msgid "customer, tiles, schweiger"
+msgstr ""
+
+#: inc/gw-register-acf-block-types.php:82
+#: inc/gw-register-acf-block-types.php:83
+msgid "Team Tiles"
+msgstr ""
+
+#: inc/gw-register-acf-block-types.php:95
+msgid "team, tiles, schweiger"
+msgstr ""
+
+#: inc/gw-register-acf-block-types.php:118
+msgid "Schweiger Design Blocks"
+msgstr "Schweiger Design Blöcke"
+
+#: inc/gw-register-post-types.php:6
+msgctxt "Post Type Main Label"
+msgid "Projects"
+msgstr "Projekte"
+
+#: inc/gw-register-post-types.php:8
+msgctxt "Post Type General Name"
+msgid "Projects"
+msgstr "Projekte"
+
+#: inc/gw-register-post-types.php:9
+msgctxt "Post Type Singular Name"
+msgid "Project"
+msgstr "Projekt"
+
+#: inc/gw-register-post-types.php:10 inc/gw-register-post-types.php:11
+msgid "Projects"
+msgstr "Projekte"
+
+#: inc/gw-register-post-types.php:12
+msgid "Project Archives"
+msgstr "Projekt-Archiv"
+
+#: inc/gw-register-post-types.php:13
+msgid "Project Attributes"
+msgstr "Projektattribute"
+
+#: inc/gw-register-post-types.php:14
+msgid "Parent Project:"
+msgstr "Übergeordnetes Projekt:"
+
+#: inc/gw-register-post-types.php:15
+msgid "All Projects"
+msgstr "Alle Projekte"
+
+#: inc/gw-register-post-types.php:16
+msgid "Add New Project"
+msgstr "Neues Projekt hinzufügen"
+
+#: inc/gw-register-post-types.php:17
+msgid "New Project"
+msgstr "Neues Projekt"
+
+#: inc/gw-register-post-types.php:18
+msgid "Edit Project"
+msgstr "Projekt bearbeiten"
+
+#: inc/gw-register-post-types.php:19
+msgid "Update Project"
+msgstr "Projekt aktualisieren"
+
+#: inc/gw-register-post-types.php:20 inc/gw-register-post-types.php:21
+msgid "View Project"
+msgstr "Projekt ansehen"
+
+#: inc/gw-register-post-types.php:22
+msgid "Search Project"
+msgstr "Projekt suchen"
+
+#: inc/gw-register-post-types.php:23
+msgid "No projects found"
+msgstr "Keine Projekte gefunden"
+
+#: inc/gw-register-post-types.php:24
+msgid "No projects found in Trash"
+msgstr "Keine Objekt im Papierkorb gefunden"
+
+#: inc/gw-register-post-types.php:30
+msgctxt "CPT permalink slug"
+msgid "projects"
+msgstr "projekte"
+
+#: inc/gw-register-post-types.php:52
+msgctxt "Post Type Main Label"
+msgid "Customer"
+msgstr "Kunde"
+
+#: inc/gw-register-post-types.php:54
+msgctxt "Post Type General Name"
+msgid "Customers"
+msgstr "Kunden"
+
+#: inc/gw-register-post-types.php:55
+msgctxt "Post Type Singular Name"
+msgid "Customer"
+msgstr "Kunde"
+
+#: inc/gw-register-post-types.php:56 inc/gw-register-post-types.php:57
+msgid "Customer"
+msgstr "Kunde"
+
+#: inc/gw-register-post-types.php:58
+msgid "Customer Archives"
+msgstr "Kundenarchiv"
+
+#: inc/gw-register-post-types.php:59
+msgid "Customer Attributes"
+msgstr "Kundenattribute"
+
+#: inc/gw-register-post-types.php:60
+msgid "Parent Customer:"
+msgstr "Übergeordneter Kunde:"
+
+#: inc/gw-register-post-types.php:61
+msgid "All Customers"
+msgstr "Alle Kunden"
+
+#: inc/gw-register-post-types.php:62
+msgid "Add New Customer"
+msgstr "Neuen Kunden hinzufügen"
+
+#: inc/gw-register-post-types.php:63
+msgid "New Customer"
+msgstr "Neuer Kunde"
+
+#: inc/gw-register-post-types.php:64
+msgid "Edit Customer"
+msgstr "Kunde bearbeiten"
+
+#: inc/gw-register-post-types.php:65
+msgid "Update Customer"
+msgstr "Kunde aktualisieren"
+
+#: inc/gw-register-post-types.php:66 inc/gw-register-post-types.php:67
+msgid "View Customer"
+msgstr "Kunde anzeigen"
+
+#: inc/gw-register-post-types.php:68
+msgid "Search Customer"
+msgstr "Kunde suchen"
+
+#: inc/gw-register-post-types.php:69
+msgid "No customers found"
+msgstr "Keine Kunden gefunden"
+
+#: inc/gw-register-post-types.php:70
+msgid "No customers found in Trash"
+msgstr "Keine Kunden in Papierkorb gefunden"
+
+#: inc/gw-register-post-types.php:76
+msgctxt "CPT permalink slug"
+msgid "customers"
+msgstr "kunden"
+
+#: inc/gw-register-post-types.php:98
+msgctxt "Post Type Main Label"
+msgid "Engagement"
+msgstr "Engagement"
+
+#: inc/gw-register-post-types.php:100
+msgctxt "Post Type General Name"
+msgid "Engagements"
+msgstr "Engagements"
+
+#: inc/gw-register-post-types.php:101
+msgctxt "Post Type Singular Name"
+msgid "Engagement"
+msgstr "Engagement"
+
+#: inc/gw-register-post-types.php:102 inc/gw-register-post-types.php:103
+msgid "Engagement"
+msgstr "Engagement"
+
+#: inc/gw-register-post-types.php:104
+msgid "Engagement Archives"
+msgstr "Engagement Archiv"
+
+#: inc/gw-register-post-types.php:105
+msgid "Engagement Attributes"
+msgstr "Engagement-Attribute"
+
+#: inc/gw-register-post-types.php:106
+msgid "Parent Engagement:"
+msgstr "Übergeordnetes Engagement:"
+
+#: inc/gw-register-post-types.php:107
+msgid "All Engagements"
+msgstr "Alle Engagements"
+
+#: inc/gw-register-post-types.php:108
+msgid "Add New Engagement"
+msgstr "Neue Engagement hinzufügen"
+
+#: inc/gw-register-post-types.php:109
+msgid "New Engagement"
+msgstr "Neues Engagement"
+
+#: inc/gw-register-post-types.php:110
+msgid "Edit Engagement"
+msgstr "Engagement bearbeiten"
+
+#: inc/gw-register-post-types.php:111
+msgid "Update Engagement"
+msgstr "Engagement aktualisieren"
+
+#: inc/gw-register-post-types.php:112 inc/gw-register-post-types.php:113
+msgid "View Engagement"
+msgstr "Engagement ansehen"
+
+#: inc/gw-register-post-types.php:114
+msgid "Search Engagement"
+msgstr "Engagement suchen"
+
+#: inc/gw-register-post-types.php:115
+msgid "No engagements found"
+msgstr "Keine Engagements gefunden"
+
+#: inc/gw-register-post-types.php:116
+msgid "No engagements found in Trash"
+msgstr "Keine Engagements im Papierkorb gefunden"
+
+#: inc/gw-register-post-types.php:122
+msgctxt "CPT permalink slug"
+msgid "engagement"
+msgstr "engagement"
+
+#: inc/gw-register-post-types.php:144
+msgctxt "Post Type Main Label"
+msgid "Team Memebers"
+msgstr "Team"
+
+#: inc/gw-register-post-types.php:146
+msgctxt "Post Type General Name"
+msgid "Team Members"
+msgstr "Team"
+
+#: inc/gw-register-post-types.php:147
+msgctxt "Post Type Singular Name"
+msgid "Team Member"
+msgstr "Teammitglied"
+
+#: inc/gw-register-post-types.php:148 inc/gw-register-post-types.php:149
+msgid "Team Members"
+msgstr "Teammitglieder"
+
+#: inc/gw-register-post-types.php:150
+msgid "Team Member Archives"
+msgstr "Teammitglieder Archiv"
+
+#: inc/gw-register-post-types.php:151
+msgid "Team Member Attributes"
+msgstr "Teammitglieder-Attribute"
+
+#: inc/gw-register-post-types.php:152
+msgid "Team Member:"
+msgstr "Teammitglied:"
+
+#: inc/gw-register-post-types.php:153
+msgid "All Team Members"
+msgstr "Alle Teammitglieder"
+
+#: inc/gw-register-post-types.php:154
+msgid "Add New Team Member"
+msgstr "Neues Teammitglied hinzufügen"
+
+#: inc/gw-register-post-types.php:155
+msgid "New Team Member"
+msgstr "Neues Teammitglied"
+
+#: inc/gw-register-post-types.php:156
+msgid "Edit Team Member"
+msgstr "Teammitglied bearbeiten"
+
+#: inc/gw-register-post-types.php:157
+msgid "Update Team Member"
+msgstr "Teammitglied aktualisieren"
+
+#: inc/gw-register-post-types.php:158 inc/gw-register-post-types.php:159
+msgid "View Team Member"
+msgstr "Teammitglied anzeigen"
+
+#: inc/gw-register-post-types.php:160
+msgid "Search Team Member"
+msgstr "Teammitglied suchen"
+
+#: inc/gw-register-post-types.php:161
+msgid "No Team Members found"
+msgstr "Kein Teammitglied gefunden"
+
+#: inc/gw-register-post-types.php:162
+msgid "No Team Members found in Trash"
+msgstr "Kein Teammitglied im Papierkorb gefunden"
+
+#: inc/gw-register-post-types.php:168
+msgctxt "CPT permalink slug"
+msgid "team"
+msgstr "team"
+
+#: inc/gw-register-post-types.php:190
+msgctxt "Post Type Main Label"
+msgid "Jobs"
+msgstr "Jobs"
+
+#: inc/gw-register-post-types.php:192
+msgctxt "Post Type General Name"
+msgid "Jobs"
+msgstr "Jobs"
+
+#: inc/gw-register-post-types.php:193
+msgctxt "Post Type Singular Name"
+msgid "Job"
+msgstr "Job"
+
+#: inc/gw-register-post-types.php:194 inc/gw-register-post-types.php:195
+msgid "Jobs"
+msgstr "Jobs"
+
+#: inc/gw-register-post-types.php:196
+msgid "Jobs Archives"
+msgstr "Job-Archiv"
+
+#: inc/gw-register-post-types.php:197
+msgid "Jobs Attributes"
+msgstr "Jobs-Attribute"
+
+#: inc/gw-register-post-types.php:198
+msgid "Job:"
+msgstr "Job:"
+
+#: inc/gw-register-post-types.php:199
+msgid "All Jobs"
+msgstr "Alle Jobs"
+
+#: inc/gw-register-post-types.php:200
+msgid "Add New Job"
+msgstr "Neuen Job erstellen"
+
+#: inc/gw-register-post-types.php:201
+msgid "New Job"
+msgstr "Neuer Job"
+
+#: inc/gw-register-post-types.php:202
+msgid "Edit Job"
+msgstr "Job bearbeiten"
+
+#: inc/gw-register-post-types.php:203
+msgid "Update Job"
+msgstr "Job aktualisieren"
+
+#: inc/gw-register-post-types.php:204 inc/gw-register-post-types.php:205
+msgid "View Job"
+msgstr "Job anzeigen"
+
+#: inc/gw-register-post-types.php:206
+msgid "Search Job"
+msgstr "Job suchen"
+
+#: inc/gw-register-post-types.php:207
+msgid "No Jobs found"
+msgstr "Keine Jobs gefunden"
+
+#: inc/gw-register-post-types.php:208
+msgid "No Jobs found in Trash"
+msgstr "Keine Jobs im Papierkorb gefunden"
+
+#: inc/gw-register-post-types.php:214
+msgctxt "CPT permalink slug"
+msgid "jobs"
+msgstr "jobs"
+
+#: template-parts/blocks/gw-schweiger-customer-list.php:53
+#: template-parts/blocks/gw-schweiger-project-list.php:100
+#: template-parts/blocks/gw-schweiger-project-list.php:140
+#: template-parts/blocks/gw-schweiger-team-list.php:64
+msgid "No entries found."
+msgstr "Keine Einträge gefunden."
+
+#: template-parts/blocks/gw-schweiger-heading.php:46
+msgid "Example Heading"
+msgstr "Beispielüberschrift"
+
+#: template-parts/blocks/gw-schweiger-project-list.php:80
+msgid "Show all"
+msgstr "Alle anzeigen"
+
+#: template-parts/blocks/gw-schweiger-project-list.php:145
+msgid "Choose at least one category, please."
+msgstr "Wählen Sie bitte mindestens eine Kategorie aus."
+
+#~ msgid "An example block."
+#~ msgstr "Ein Beispielblock."
+
+#~ msgid "Example"
+#~ msgstr "Beispiel"
+
+#~ msgid "example"
+#~ msgstr "beispiel"
+
+#~ msgid "WPMU Base Plugin"
+#~ msgstr "WPMU-Basisplugin"
+
+#~ msgid ""
+#~ "Adds custom post types, block types and taxonomies and configures system "
+#~ "settings."
+#~ msgstr ""
+#~ "Fügt Post-Types, Block-Types und Taxonomien hinzu und passt "
+#~ "Systemeinstellungen an."

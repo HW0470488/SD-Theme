@@ -1,0 +1,103 @@
+{
+	"name": "gw-wp-theme-template",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "A WordPress theme.",
+	"homepage": "https://github.com/livelongandprosper/gw-wp-theme-template",
+	"license": "GPL-3.0-or-later",
+	"keywords": [
+		"wordpress",
+		"theme"
+	],
+	"author": {
+		"name": "Gregor Wendland"
+	},
+	"contributors": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/livelongandprosper/gw-wp-theme-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/livelongandprosper/gw-wp-theme-template/issues"
+	},
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"swiper": [
+				"node_modules/swiper"
+			]
+		}
+	},
+	"scripts": {
+		"lint": "run-s lint:*",
+		"lint:css": "stylelint css/src --fix",
+		"lint:js": "tsc --noemit && eslint js/src --ext .ts --fix",
+		"lint:php": "composer run-script lint || (exit 0)",
+		"build": "run-s build:*",
+		"build:js": "cross-env NODE_ENV=production node esbuild",
+		"build:css": "sass --no-source-map -I css/src/values css/src:css/dist",
+		"postbuild": "postcss css/dist --dir css/dist --no-map",
+		"postinstall": "composer install || (exit 0)",
+		"pot": "wp-pot --src **/*.php --dest-file languages/gw-wp-theme.pot --package Project_Name --domain gw-wp-theme",
+		"test": "run-s lint build",
+		"watch": "run-p watch:*",
+		"watch:css": "sass --no-source-map -I css/src/values css/src:css/dist --watch",
+		"watch:eslint": "esw -w --ext .ts js/src",
+		"watch:js": "node esbuild -w"
+	},
+	"eslintConfig": {
+		"root": true,
+		"extends": "aether/typescript",
+		"parserOptions": {
+			"project": [
+				"tsconfig.json"
+			]
+		}
+	},
+	"dependencies": {
+		"swiper": "6.x.x"
+	},
+	"peerDependencies": {
+		"@wordpress/blocks": "x.x.x",
+		"@wordpress/compose": "x.x.x",
+		"@wordpress/dom-ready": "x.x.x",
+		"@wordpress/element": "x.x.x",
+		"@wordpress/hooks": "x.x.x",
+		"@wordpress/i18n": "x.x.x",
+		"jquery": "x.x.x"
+	},
+	"devDependencies": {
+		"@types/jquery": "3.x.x",
+		"@types/wordpress__blocks": "6.x.x",
+		"@types/wordpress__compose": "3.x.x",
+		"@types/wordpress__hooks": "2.x.x",
+		"@typescript-eslint/eslint-plugin": "4.x.x",
+		"@typescript-eslint/parser": "4.x.x",
+		"@wordpress/blocks": "7.x.x",
+		"@wordpress/compose": "3.x.x",
+		"@wordpress/dom-ready": "2.x.x",
+		"@wordpress/element": "2.x.x",
+		"@wordpress/hooks": "2.x.x",
+		"@wordpress/i18n": "3.x.x",
+		"autoprefixer": "10.x.x",
+		"cross-env": "7.x.x",
+		"cssnano": "4.x.x",
+		"esbuild": "0.x.x",
+		"eslint": "7.x.x",
+		"eslint-config-aether": "1.x.x",
+		"eslint-watch": "7.x.x",
+		"jquery": "3.x.x",
+		"npm-run-all": "4.x.x",
+		"postcss": "8.x.x",
+		"postcss-cli": "8.x.x",
+		"postcss-preset-env": "6.x.x",
+		"react": "16.x.x",
+		"sass": "1.x.x",
+		"stylelint": "13.x.x",
+		"stylelint-config-sass-guidelines": "8.x.x",
+		"tslib": "2.x.x",
+		"typescript": "4.x.x",
+		"wp-pot-cli": "1.x.x"
+	}
+}
