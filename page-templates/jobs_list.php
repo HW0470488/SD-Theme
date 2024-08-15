@@ -24,11 +24,10 @@ get_header(); ?>
 				
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
-				    echo '<li class="jobs-list-item">';
-					echo'<h2 class="entry-title">'
-				    
+				    echo '<li class="jobs-list-item">';				    
 				    echo '<div class="jobs-text">';
-				    
+				    //titel
+					echo'<h2>'.get_field("jobs_bezeichnung").'</h2>';
 				   // thumbnail
 				    echo '<div class="jobs-thumb">';
 					if(get_field("jobs_thumb")) {
