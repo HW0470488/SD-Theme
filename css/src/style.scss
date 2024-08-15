@@ -1,0 +1,35 @@
+@use "breakpoints";
+@use "fonts";
+@use "keyframes";
+
+@use "screen/libs/swiper/swiper";
+@use "screen/default/index";
+
+@media (min-width: breakpoints.$medium) {
+	@import "screen/medium/index";
+}
+
+@media (min-width: breakpoints.$large) {
+	@import "screen/large/index";
+}
+
+@media print {
+	@import "print";
+}
+
+// TODO: eleminate old _schweigerdesign.scss
+@import "screen/schweigerdesign";
+
+/**
+ * Hide elements
+ */
+@media screen and (max-width: -1px + breakpoints.$large) {
+	.hide-mobile {
+		display: none !important;
+	}
+}
+@media screen and (min-width: breakpoints.$large) {
+	.hide-desktop {
+		display: none !important;
+	}
+}

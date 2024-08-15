@@ -1,0 +1,40 @@
+@use "colors";
+@use "dimensions";
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: colors.$dark_grey;
+	font-family: "Work Sans", sans-serif;
+	font-size: 15px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+	> footer,
+	> header {
+		padding-left: dimensions.$content-padding;
+		padding-right: dimensions.$content-padding;
+	}
+	&.preload * {
+		transition: none !important;
+	}
+}
+
+strong {
+	font-weight: 500;
+}
+img {
+	height: auto;
+	width: auto;
+}
+figure {
+	margin: auto;
+}
+p {
+	margin-bottom: 25px;
+}

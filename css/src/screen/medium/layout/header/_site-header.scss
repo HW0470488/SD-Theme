@@ -1,0 +1,12 @@
+@use "dimensions";
+
+#masthead-wrapper {
+	#masthead {
+		height: dimensions.$header-height-medium;
+		padding-top: 70px;
+	}
+}
+.homepage-logo {
+	max-width: 240px;
+	width: 100%;
+}

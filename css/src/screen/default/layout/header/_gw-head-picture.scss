@@ -1,0 +1,143 @@
+@use "dimensions";
+
+#head-picture {
+	margin: 0 auto 1.5em auto;
+	width: 100%;
+
+	&.video {
+		pointer-events: none;
+	}
+
+	#head-picture-inner {
+		margin: 0 auto;
+		max-width: dimensions.$max-content-width;
+		position: relative;
+		width: 100%;
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+		video,
+		source {
+			bottom: 0;
+			left: 0;
+			min-height: 100%;
+			min-width: 100%;
+			position: absolute;
+		}
+	}
+}
+
+#head-picture.fullwidth {
+	background: #F5F5F5;
+	height: 65vh;
+	position: relative;
+	width: 100%;
+
+	&.video {
+		height: auto;
+		display: block;
+	}
+
+	.header-picture-box {
+		background-position: center center;
+		background-size: cover;
+		display: block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		.head-arrow-down-link {
+			animation: bounce 2s infinite ease-in-out;
+			bottom: 20px;
+			display: block;
+			font-size: 40px;
+			height: 40px;
+			left: 0;
+			line-height: 40px;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			width: 40px;
+
+			&::after {
+				content: url(../../images/arrow_down.svg);
+				display: block;
+			}
+		}
+	}
+
+	/* Video background */
+	.videobg {
+		background: #111; /* bg color, if video is not high enough */
+		height: 100%; /* Set video container element height here */
+		overflow: hidden;
+		pointer-events: none;
+		position: relative;
+		position: relative;
+		width: 100%; /* Set video container element width here */
+
+		margin-top: dimensions.$header-height-default;
+
+		video {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		/* horizontally center the video */
+		.videobg-width {
+			height: 100%;
+			left: -9999px;
+			margin: auto;
+			position: absolute;
+			right: -9999px;
+			width: 100%; /* Change width value to cover more area*/
+		}
+
+		/* set video aspect ratio and vertically center */
+		.videobg-aspect {
+			bottom: -9999px;
+			height: 0;
+			margin: auto;
+			overflow: hidden;
+			padding-bottom: 56.25%; /* 16:9 ratio */
+			position: absolute;
+			top: -9999px;
+			width: 100%;
+
+		}
+
+		.videobg-make-height { bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.videobg-hide-controls {
+			box-sizing: content-box;
+			height: 100%;
+			left: -97.7777px; /* 16:9 ratio */
+			/* Vimeo timeline and play button are ~55px high */
+			padding: 55px 97.7777px; /* 16:9 ratio */
+			position: relative;
+			top: -55px;
+			width: 100%;
+		}
+
+		iframe {
+			border: 0 none;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+}

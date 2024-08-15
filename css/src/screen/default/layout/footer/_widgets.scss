@@ -1,0 +1,163 @@
+@use "colors";
+
+.gw-footer-top {
+	display: flex;
+	flex-wrap: wrap;
+
+	.footer-column {
+		border-top: 2px solid colors.$dark_grey;
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+		padding-top: 15px;
+
+		p {
+			margin-bottom: 1em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.footer-column + .footer-column {
+		.widget {
+			flex-basis: 50%;
+			margin-bottom: 15px;
+		}
+		.widget + .widget {
+			flex-basis: 50%;
+
+			ul {
+				font-weight: bold;
+				li {
+
+				}
+			}
+		}
+		.widget + .widget + .widget {
+			flex-basis: 100%;
+			margin-bottom: 0;
+
+			ul {
+				display: flex;
+				font-weight: normal;
+
+				li {
+					&::after {
+						content: "/";
+						display: inline-block;
+						margin: 0 0.3em;
+					}
+
+					&:last-child {
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.gw-footer-bottom {
+	border-top: 2px solid colors.$dark_grey;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+}
+
+.gw-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.widget {
+		align-items: center;
+		display: flex;
+		flex-basis: auto;
+
+		ul {
+			display: flex;
+
+			li {
+				margin: 0 0 0 10px;
+			}
+		}
+	}
+}
+
+a[href*="facebook"],
+a[href*="instagram"],
+a[href*="xing"],
+a[href*="linkedin"],
+a[href*="marketingclub"],
+a[href*="bdg"], {
+	display: block;
+	height: 25px;
+	overflow: hidden;
+	position: relative;
+	text-indent: -10000px;
+	width: 25px;
+
+	&::after {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 70%;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 70%;
+	}
+}
+a[href*="facebook"],
+a[href*="instagram"],
+a[href*="xing"],
+a[href*="linkedin"] {
+	background: black;
+	border-radius: 100%;
+}
+a[href*="facebook"] {
+	&::after {
+		background-image: url(../../images/icons/facebook-f_white.svg);
+	}
+}
+a[href*="instagram"] {
+	&::after {
+		background-image: url(../../images/icons/instagram_white.svg);
+	}
+}
+a[href*="xing"] {
+	&::after {
+		background-image: url(../../images/icons/xing_white.svg);
+	}
+}
+a[href*="linkedin"] {
+	&::after {
+		background-image: url(../../images/icons/linkedin-in_white.svg);
+	}
+}
+a[href*="marketingclub"] {
+	height: 30px;
+	width: 30px;
+	&::after {
+		background-image: url(../../images/icons/logo_marketingclub_potsdam.svg);
+		height: 100%;
+		width: 100%;
+	}
+}
+a[href*="bdg"] {
+	height: 30px;
+	width: 30px;
+	&::after {
+		background-image: url(../../images/icons/logo_berufsverband_kommunikationsdesigner.svg);
+		height: 100%;
+		width: 100%;
+	}
+}

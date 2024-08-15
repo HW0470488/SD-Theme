@@ -1,0 +1,8 @@
+@use "dimensions";
+
+.header-footer-group {
+	> * {
+		margin: auto;
+		max-width: dimensions.$max-content-width;
+	}
+}

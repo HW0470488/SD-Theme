@@ -1,0 +1,5 @@
+@use "dimensions";
+
+#main {
+	padding-top: dimensions.$header-height-medium + 50px;
+}

@@ -1,0 +1,35 @@
+@use "colors";
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 289%;
+	line-height: 1.1;
+
+	p {
+		line-height: 1.1 !important;
+	}
+}
+
+h2 {
+	font-size: 136%;
+}
+
+h3 {
+	font-size: 140%;
+}
+
+h4 {
+	font-size: 120%;
+}
+.gw-underline {
+	&::after {
+		border-bottom: 3px solid colors.$brand_color;
+		content: "";
+		display: block;
+		margin: 0.8em 0.8em 0.8em 0;
+		width: 45px;
+	}
+}

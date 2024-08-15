@@ -1,0 +1,19 @@
+.post-meta-edit-link-wrapper {
+	margin: 3em 0;
+	text-align: right;
+}
+
+.post-meta {
+	list-style: none;
+	padding: 0;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	li {
+		display: inline;
+		+ li {
+			margin-left: 1em;
+		}
+	}
+}

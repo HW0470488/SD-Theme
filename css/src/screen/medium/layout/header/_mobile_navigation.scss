@@ -1,0 +1,10 @@
+@use "colors";
+@use "layers";
+// mobile navigation
+.mobile-navigation {
+	ul {
+		li {
+			padding-left: 50%;
+		}
+	}
+} // .mobile-navigation

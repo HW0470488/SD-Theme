@@ -1,0 +1,16 @@
+@use "colors";
+@use "durations";
+
+a {
+	text-decoration: none;
+	transition: color durations.$short, opacity durations.$short;
+}
+.entry-content {
+	a:not(.wp-block-button__link) {
+		color: colors.$std_link_color;
+
+		&:hover {
+			color: colors.$std_link_hover_color;
+		}
+	}
+}

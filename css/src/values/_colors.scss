@@ -1,0 +1,16 @@
+@forward "colors-material";
+
+$brand_color: #E1251B; // schweiger design brand color
+
+$main_navi_color: #000000;
+$std_font_color: #1D1D1B;
+$std_link_color: #1D1D1B;
+$std_link_hover_color: $brand_color;
+$dark_grey: #1D1D1B;
+$white: #FFFFFF;
+$brand_secondary: #e5e6e8;
+$brand_overlay_color: rgba($brand_color, 0.85);
+
+$grey_B250: #E6E6E6;
+$grey_B350: #CCCCCC;
+$grey_B360: #C6C6C6;

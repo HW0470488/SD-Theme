@@ -1,0 +1,32 @@
+/**
+ * Style definitions for all screens.
+ */
+
+@use "adminbar";
+
+@use "base/anchor";
+@use "base/article";
+@use "base/block";
+@use "base/body";
+@use "base/form";
+@use "base/heading";
+@use "base/list";
+@use "base/main";
+@use "base/nav";
+
+// header
+@use "layout/header/gw-head-picture";
+@use "layout/header/mobile_navigation";
+@use "layout/header/navigation";
+@use "layout/header/site-header";
+
+// content
+@use "layout/content";
+@use "layout/header-footer-group";
+
+@use "layout/post-meta";
+@use "layout/screen-reader-text";
+@use "layout/wp-block-latest-posts";
+
+// footer
+@use "layout/footer";

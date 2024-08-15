@@ -1,0 +1,14 @@
+/**
+ * Style definitions for medium-sized screens.
+ */
+
+// header
+@use "layout/header/gw-head-picture";
+@use "layout/header/mobile_navigation";
+@use "layout/header/site-header";
+
+// content
+@use "layout/content";
+
+// footer
+@use "layout/footer";

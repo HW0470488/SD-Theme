@@ -1,0 +1,7 @@
+@use "colors";
+@use "dimensions";
+@use "sass:math";
+
+.gw-block-schweiger-tile {
+	max-width: ( math.div(dimensions.$max-content-width - 80, 3));
+}

@@ -1,0 +1,75 @@
+@use "dimensions";
+article.schweiger_projects {
+	.entry-content {
+		margin-top: 0;
+	}
+	.entry-content,
+	.wp-block-column {
+		> h1:first-child,
+		> h2:first-child,
+		> h3:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.prev-link {
+	background: url(../../images/icons/arrow_left.svg) center center no-repeat;
+	background-size: contain;
+	bottom: 0;
+	height: 50px;
+	left: 10px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	width: 50px;
+}
+.next-link {
+	background: url(../../images/icons/arrow_left.svg) center center no-repeat;
+	background-size: contain;
+	bottom: 0;
+	height: 50px;
+	margin: auto;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	transform: rotate(180deg);
+	width: 50px;
+}
+.gw-project-detail-teaser-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.gw-project-detail-teaser-image-wrapper {
+		flex-basis: 47%;
+		margin-bottom: 3em;
+		.gw-project-detail-teaser-image {
+			min-height: 280px;
+			position: relative;
+			width: 100%;
+
+			img {
+				height: 100%;
+				left: 0;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
+}
+.gw-project-date {
+	align-items: center;
+	display: flex;
+	&::before {
+		background: url(../../images/logo_schweiger_red_square.svg) center center no-repeat;
+		background-size: contain;
+		content: "";
+		display: block;
+		height: 15px;
+		margin-right: 10px;
+		width: 15px;
+	}
+}

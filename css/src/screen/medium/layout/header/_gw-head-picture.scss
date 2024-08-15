@@ -1,0 +1,16 @@
+@use "dimensions";
+#head-picture {
+	margin: 0 auto 5em auto;
+}
+
+#head-picture.fullwidth {
+	.header-picture-box {
+		.head-arrow-down-link {
+			display: none;
+		}
+	}
+	/* Video background */
+	.videobg {
+		margin-top: dimensions.$header-height-medium;
+	}
+}

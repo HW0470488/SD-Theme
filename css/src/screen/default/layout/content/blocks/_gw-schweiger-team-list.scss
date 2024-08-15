@@ -1,0 +1,142 @@
+@use "dimensions";
+@use "colors";
+
+.gw-schweiger-team-list {
+	width: 100%;
+	> ul {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		&::after {
+			content: "";
+			flex: auto;
+		}
+
+		> li {
+			flex-basis: 48%;
+			margin-bottom: 40px;
+
+			.team-image {
+				display: block;
+				height: 48vw;
+				overflow: hidden;
+
+				position: relative;
+				width: 100%;
+
+				img {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+				}
+
+				a {
+
+					border: 1px solid white;
+
+					bottom: 10%;
+					color: white;
+					display: block;
+					left: 0;
+					margin: auto;
+					max-width: 50%;
+					opacity: 0;
+					padding: 10px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+					z-index: 1;
+
+					&:hover {
+						background-color: white;
+						color: colors.$brand_color;
+					}
+				}
+				&::after {
+					background: colors.$brand_overlay_color;
+					bottom: 0;
+					content: "";
+					display: block;
+					height: 0%;
+					left: 0;
+					margin: auto;
+					opacity: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					transition: all 0.3s ease;
+					width: 100%;
+					z-index: 0;
+				}
+
+				&:hover {
+					a {
+						opacity: 1;
+					}
+					&::after {
+						height: 100%;
+						opacity: 1;
+					}
+				}
+			}
+
+			.team-text {
+				display: block;
+				width: 100%;
+
+				h3 {
+					font-size: 100%;
+					margin-bottom: 30px;
+					.main-head {
+						font-size: 150%;
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+					.sub-head {
+						display: block;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&.gw-full-width {
+		> ul {
+			> li {
+				display: flex;
+				flex-basis: 100%;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				.team-image {
+					flex-basis: 100%;
+					width: 100%;
+					height: auto;
+				}
+
+				.team-text {
+					flex-basis: 100%;
+
+					ul {
+						margin: 0;
+						padding-left: 20px;
+					}
+				}
+			}
+			li:last-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

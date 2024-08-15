@@ -1,0 +1,32 @@
+@use "colors";
+@use "dimensions";
+
+#colophon {
+	border-bottom: 10px solid colors.$brand_color;
+	#colophon-inner {
+		line-height: 24px;
+		margin: 0 auto;
+		max-width: dimensions.$max-content-width;
+		padding: 20px 10px 58px 10px;
+
+		width: 100%;
+
+		.footer-title {
+
+		}
+	}
+
+	a {
+		color: colors.$dark_grey;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
+}

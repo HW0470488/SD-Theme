@@ -1,0 +1,28 @@
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	li {
+		border: 1px inset rgba(0,0,0,.1);
+		padding: 15px 10px;
+
+		> a {
+			font-size: 120%;
+			font-weight: bold;
+			color: #8a8989;
+			text-decoration: none;
+			border-bottom: 1px dotted #8a8989;
+		}
+
+		.wp-block-latest-posts__featured-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+.wp-block-latest-posts.columns-3 li {
+	width: 100%;
+}
+.wp-block-latest-posts.is-grid li {
+	margin: 0 0 20px 0;
+}

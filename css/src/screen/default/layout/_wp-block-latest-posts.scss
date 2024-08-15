@@ -1,0 +1,13 @@
+.load-more-wrapper {
+	padding: 1em 0;
+	text-align: center;
+}
+
+.load-more {
+	&.loading {
+		cursor: progress;
+	}
+	&.end-of-page {
+		display: none;
+	}
+}

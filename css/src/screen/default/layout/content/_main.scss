@@ -1,0 +1,20 @@
+@use "dimensions";
+
+#page {
+	position: relative;
+}
+#masthead {
+	margin: auto;
+	max-width: dimensions.$max-content-width;
+	padding-left: dimensions.$content-padding;
+	padding-right: dimensions.$content-padding;
+	width: 100%;
+}
+#main {
+	padding-top: dimensions.$header-height-default + 50px;
+}
+.home {
+	#main {
+		padding-top: 0;
+	}
+}

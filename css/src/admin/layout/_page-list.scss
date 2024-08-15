@@ -1,0 +1,28 @@
+@use "colors";
+
+.wp-list-table.pages {
+	.level-0 {
+		+ .level-1 {
+			th, td {
+				border-top: 2px solid black;
+			}
+		}
+	}
+	.level-1 {
+		background-color: colors.$grey_200;
+		&:nth-child(odd) {
+			background-color: colors.$grey_B250;
+		}
+		+ .level-0 {
+			th, td {
+				border-top: 2px solid black;
+			}
+		}
+	}
+	.level-2 {
+		background-color: colors.$grey_B350;
+		&:nth-child(odd) {
+			background-color: colors.$grey_B360;
+		}
+	}
+}

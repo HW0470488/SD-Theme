@@ -1,0 +1,12 @@
+@use "values/breakpoints";
+@use "fonts";
+@use "editor" as *;
+@use "screen/default/editor" as *;
+
+@media (min-width: breakpoints.$medium) {
+	@import "screen/medium/editor";
+}
+
+@media (min-width: breakpoints.$large) {
+	@import "screen/large/editor";
+}

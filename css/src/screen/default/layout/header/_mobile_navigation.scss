@@ -1,0 +1,110 @@
+@use "colors";
+@use "layers";
+// mobile navigation
+.mobile-navigation {
+
+	background-color: #FFFFFF;
+	display: none;
+	font-size: 120%;
+	font-weight: normal;
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	overflow: hidden;
+	padding: 25px 20px 0 20px;
+	position: fixed;
+	top: 0;
+
+	transition: background-color 1s ease;
+
+	width: 100%;
+	z-index: 10000;
+
+	&.visible {
+		background-color: rgba(colors.$brand_color, 0.8);
+	}
+
+	ul {
+		margin-top: 100px;
+		li {
+			display: block;
+			font-size: 180%;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			padding-left: 10%;
+			width: 100%;
+
+			a {
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+
+			&.current-menu-item,
+			&.current-page-ancestor {
+				margin-bottom: 20px;
+				a {
+					position: relative;
+					&::after {
+						border-bottom: 2px solid #FFFFFF;
+						bottom: -5px;
+						content: "";
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+} // .mobile-navigation
+
+// hamburger
+.mobile-navigation-trigger {
+	bottom: 18px;
+	cursor: pointer;
+	display: block;
+	height: 45px;
+	position: absolute;
+	right: 10px;
+	width: 40px;
+	z-index: 10001;
+
+	.mobile-navigation-icon,
+	.mobile-navigation-icon::after,
+	.mobile-navigation-icon::before {
+		background: colors.$std_font_color;
+		border-radius: 0;
+		content: "";
+		display: block;
+		height: 5px;
+		left: 0%;
+		position: absolute;
+		top: 47%;
+		transition: all 500ms ease-in-out;
+		transition: all 500ms ease-in-out;
+		transition: all 500ms ease-in-out;
+		width: 100%;
+	}
+	.mobile-navigation-icon {
+		&::before {
+			transform: translate3d(0%, -13px, 0);
+			transform: translate3d(0%, -13px, 0);
+			transform: translate3d(0%, -13px, 0);
+		}
+		&::after {
+			transform: translate3d(0%, 9px, 0);
+			transform: translate3d(0%, 9px, 0);
+			transform: translate3d(0%, 9px, 0);
+		}
+	}
+	&.active {
+		.mobile-navigation-icon {
+			background: #FFFFFF;
+
+			&::before,
+			&::after {
+				background: #FFFFFF;
+			}
+		}
+	}
+} // .mobile-navigation-trigger

@@ -1,0 +1,34 @@
+@use "colors";
+
+// Text colors.
+
+.has-schweiger-red-color {
+	color: colors.$brand_color;
+}
+.has-grey-text-color {
+	color: colors.$dark_grey;
+}
+.has-light-grey-color {
+	color: colors.$brand_secondary;
+}
+.has-white-color {
+	color: colors.$white;
+}
+
+// Background colors.
+
+.has-schweiger-red-background-color,
+.entry-content .wp-block-button__link.has-schweiger-red-background-color {
+	background-color: colors.$brand_color;
+}
+.has-grey-text-background-color,
+.entry-content .wp-block-button__link.has-grey-text-background-color {
+	background-color: colors.$dark_grey;
+}
+.has-light-grey-background-color,
+.entry-content .wp-block-button__link.has-light-grey-background-color {
+	background-color: colors.$brand_secondary;
+}
+.gw-no-margin-bottom {
+	margin-bottom: 0 !important;
+}

@@ -1,0 +1,21 @@
+@use "colors";
+
+.gw-block-schweiger-heading {
+	color: colors.$brand_color;
+	b, strong {
+		font-weight: inherit;
+		position: relative;
+
+		&::after {
+			background-color: rgba(colors.$brand_color, 0.3);
+			bottom: -10%;
+			content: "";
+			height: 60%;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+}

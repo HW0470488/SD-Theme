@@ -1,0 +1,118 @@
+@use "colors";
+.block-editor-block-styles__item-preview .wp-block-buttons,
+.wp-block-buttons {
+	font-size: 125%;
+	&.is-content-justification-center {
+		justify-content: space-between;
+		.wp-block-button {
+			margin: auto !important;
+		}
+	}
+
+	.wp-block-button {
+		.wp-block-button__link {
+			color: colors.$std_link_color;
+			font-size: 110%;
+			padding: 0.5em 2em;
+			box-shadow: none !important;
+			transition: background-color 0.3s ease;
+			background-image: none !important;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		&.is-style-gw-download {
+			.wp-block-button__link {
+				align-items: center;
+				background: #FFFFFF !important;
+				border: 2px solid colors.$brand_color;
+				border-radius: 0;
+				color: colors.$brand_color;
+				display: flex;
+				font-weight: bold;
+				padding: 0.5em 1em;
+				position: relative;
+
+				&::before {
+					background: url(../../images/icons/download.svg) center center no-repeat;
+					background-size: contain;
+					content: "";
+					display: inline-block;
+					height: 20px;
+					margin-right: 10px;
+					width: 20px;
+				}
+
+				&:focus {
+					background-color: colors.$brand_color !important;
+					color: white;
+					&::before {
+						background: url(../../images/icons/download_white.svg) center center no-repeat;
+					}
+				}
+			}
+		}
+
+		&.is-style-gw-primary-button {
+			.wp-block-button__link {
+				background-color: colors.$brand_color;
+				background-image: none !important;
+				color: white;
+				border-radius: 0;
+				border: none;
+				border: 2px solid transparent;
+
+				&:focus {
+					color: colors.$brand_color;
+					background-color: white;
+					border: 2px solid colors.$brand_color;
+				}
+			}
+		}
+
+		&.is-style-gw-secondary-button {
+			.wp-block-button__link {
+				background-color: white;
+				border: 2px solid colors.$brand_color;
+				background-image: none !important;
+				color: colors.$brand_color;
+				border-radius: 0;
+
+				&:focus {
+					background-color: colors.$brand_color;
+					color: white;
+				}
+			}
+		}
+
+		&.is-style-gw-grey-button {
+			.wp-block-button__link {
+				background-color: colors.$brand_secondary;
+				border: 2px solid colors.$brand_secondary;
+				background-image: none !important;
+				color: white;
+				border-radius: 0;
+
+				&:focus {
+					background-color: colors.$dark_grey;
+					color: white;
+				}
+			}
+		}
+
+		&.is-style-gw-outlined-button {
+			.wp-block-button__link {
+				background-color: white;
+				border: 2px solid colors.$brand_secondary;
+				background-image: none !important;
+				color: colors.$dark_grey;
+				border-radius: 0;
+
+				&:focus {
+					background-color: colors.$dark_grey;
+					color: white;
+				}
+			}
+		}
+	}
+}

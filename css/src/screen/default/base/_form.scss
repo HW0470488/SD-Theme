@@ -1,0 +1,19 @@
+@use "colors";
+
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+textarea {
+	max-width: 100%;
+	min-height: 250px;
+	width: 100%;
+}
+
+input[type=submit] {
+	cursor: pointer;
+	text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.admin-bar {
+	#masthead-wrapper {
+		top: 46px;
+		@media screen and (min-width: 783px) {
+			top: 32px !important;
+		}
+	}
+
+	&.scrolled-body {
+		@media screen and (max-width: 600px) {
+			#masthead-wrapper {
+				top: 0;
+			}
+		}
+	}
+}

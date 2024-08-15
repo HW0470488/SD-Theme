@@ -1,0 +1,32 @@
+@use "dimensions";
+@use "colors";
+.gw-post-nav {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: dimensions.$max-content-width;
+	padding-left: dimensions.$content-padding;
+	padding-right: dimensions.$content-padding;
+
+	a {
+		font-size: 110%;
+		padding: 0.5em 2em;
+		box-shadow: none !important;
+		transition: background-color 0.3s ease;
+		background-image: none !important;
+
+		background-color: white;
+		border: 2px solid colors.$brand_color;
+		background-image: none !important;
+		color: colors.$brand_color;
+		border-radius: 0;
+
+		&:focus {
+			background-color: colors.$brand_color;
+			color: white;
+		}
+
+	}
+}

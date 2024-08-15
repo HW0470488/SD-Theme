@@ -1,0 +1,19 @@
+@use "colors";
+.wp-block-pb-accordion-item {
+	.c-accordion__title {
+		padding-left: 2rem;
+		padding-right: auto;
+		&::after {
+			right: auto;
+			left: 0;
+			color: colors.$brand_color;
+		}
+	}
+
+	.c-accordion__content {
+		> * {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}

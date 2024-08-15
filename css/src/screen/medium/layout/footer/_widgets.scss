@@ -1,0 +1,16 @@
+.gw-footer-top,
+.gw-footer-bottom {
+	flex-wrap: wrap;
+
+	.footer-column {
+		flex-basis: 60%;
+
+		& + .footer-column {
+			flex-basis: 30%;
+			margin-left: 10%;
+			.widget {
+				margin-bottom: auto;
+			}
+		}
+	}
+}
