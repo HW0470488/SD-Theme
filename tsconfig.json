@@ -1,0 +1,15 @@
+{
+	"include": ["js/src"],
+	"compilerOptions": {
+		"rootDir": ".",
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"target": "ESNext",
+		"strict": true,
+		"sourceMap": false,
+		"importHelpers": true,
+		"skipLibCheck": true,
+		"strictNullChecks": false,
+		"allowSyntheticDefaultImports": true
+	}
+}
