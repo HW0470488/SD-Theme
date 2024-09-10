@@ -1,1 +1,27 @@
-.wp-list-table.pages .level-0+.level-1 td,.wp-list-table.pages .level-0+.level-1 th{border-top:2px solid #000}.wp-list-table.pages .level-1{background-color:#eee}.wp-list-table.pages .level-1:nth-child(odd){background-color:#e6e6e6}.wp-list-table.pages .level-1+.level-0 td,.wp-list-table.pages .level-1+.level-0 th{border-top:2px solid #000}.wp-list-table.pages .level-2{background-color:#ccc}.wp-list-table.pages .level-2:nth-child(odd){background-color:#c6c6c6}
+/**
+ * Material Design - Color Palette
+ * 1/15/2015
+ * www.google.com/design/spec/style/color.html#color-color-palette
+ */
+.wp-list-table.pages .level-0 + .level-1 th, .wp-list-table.pages .level-0 + .level-1 td {
+  border-top: 2px solid black;
+}
+.wp-list-table.pages .level-1 {
+  background-color: #EEEEEE;
+}
+.wp-list-table.pages .level-1:nth-child(odd) {
+  background-color: #E6E6E6;
+}
+.wp-list-table.pages .level-1 + .level-0 th, .wp-list-table.pages .level-1 + .level-0 td {
+  border-top: 2px solid black;
+}
+.wp-list-table.pages .level-2 {
+  background-color: #CCCCCC;
+}
+.wp-list-table.pages .level-2:nth-child(odd) {
+  background-color: #C6C6C6;
+}
+
+/**
+ * Global style definitions for the entire admin area.
+ */
