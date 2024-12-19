@@ -1,0 +1,50 @@
+@use "dimensions";
+
+.gw-schweiger-team-list {
+	width: 100%;
+	ul {
+		li {
+			flex-basis: calc(33.333% - 30px);
+			margin-right: 40px;
+
+			&:nth-child(3n) {
+				margin-right: 0px;
+			}
+
+			.team-image {
+				height: dimensions.$max-content-width * 0.32;
+			}
+		}
+	}
+	&.gw-full-width {
+		> ul {
+			> li {
+				display: flex;
+				flex-basis: 100%;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+
+				.team-image {
+					flex-basis: calc(33.333% - 30px);
+					margin-right: 40px;
+				}
+
+				.team-text {
+					flex-basis: calc(66.666% - 10px);
+
+					h3 {
+						margin-top: 0;
+					}
+					ul {
+						margin: 0;
+						padding-left: 20px;
+					}
+				}
+			}
+			li:last-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+}

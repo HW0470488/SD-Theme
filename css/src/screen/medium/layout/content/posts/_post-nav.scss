@@ -1,0 +1,10 @@
+@use "colors";
+.gw-post-nav {
+	a {
+		&:hover {
+			background-color: colors.$brand_color;
+			color: white;
+		}
+
+	}
+}

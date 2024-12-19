@@ -1,0 +1,66 @@
+@use "colors";
+.block-editor-block-styles__item-preview .wp-block-buttons,
+.wp-block-buttons {
+	.wp-block-button {
+		&.is-style-outline {
+			.wp-block-button__link {
+				border: 1px solid colors.$dark_grey;
+				&:hover {
+					background-image: none !important;
+					background-color: colors.$brand_color !important;
+					color: white !important;
+					border-color: white;
+				}
+			}
+		}
+		&.is-style-gw-download {
+			.wp-block-button__link {
+				&:hover {
+					background-color: colors.$brand_color !important;
+					color: white !important;
+					&::before {
+						background: url(../../images/icons/download_white.svg) center center no-repeat;
+					}
+				}
+			}
+		}
+
+		&.is-style-gw-primary-button {
+			.wp-block-button__link {
+				&:hover {
+					color: colors.$brand_color;
+					background-color: white;
+					border: 2px solid colors.$brand_color;
+				}
+			}
+		}
+
+		&.is-style-gw-secondary-button {
+			.wp-block-button__link {
+				&:hover {
+					background-color: colors.$brand_color;
+					color: white;
+				}
+			}
+		}
+
+		&.is-style-gw-secondary-button {
+			.wp-block-button__link {
+				&:hover {
+					background-color: colors.$brand_color;
+					color: white;
+				}
+			}
+		}
+
+		&.is-style-gw-grey-button {
+			.wp-block-button__link {
+				&:hover {
+					background-color: colors.$dark_grey;
+					color: white;
+				}
+			}
+		}
+
+	}
+}
