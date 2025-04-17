@@ -52,3 +52,53 @@ Author URI: https://www.schweiger-design.de/
 input.wpcf7-form-control.wpcf7-text {
     height: 30px;
 }
+
+.wpcf7-form input:focus, .wpcf7-form input:active, .wpcf7-form input:focus-visible{
+    border: 2px solid #E1251B!important;
+    border-radius: 0%;
+}
+
+.wpcf7-form input:checked,  .wpcf7-form input:hover{
+    border: 2px solid #000!important;
+}
+.wpcf7-form input:valid, .wpcf7-form input:enabled, .wpcf7-form input:default{
+    border: 1px solid #000!important;
+}
+
+.wpcf7-form input:visited{
+    border: 2px solid #848484!important;
+}
+
+/*messsage styling*/
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #848484;
+}
+ 
+.wpcf7 form.init .wpcf7-response-output {
+    display: none;
+}
+ 
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #000; 
+}
+ 
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    border-color: #E1251B;
+}
+ 
+.wpcf7 form.spam .wpcf7-response-output {
+    border-color: #E1251B;
+}
+ 
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: #E1251B;
+}
+
+.wpcf7-not-valid-tip {
+    color: #E1251B;
+}
