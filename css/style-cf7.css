@@ -19,7 +19,7 @@ Author URI: https://www.schweiger-design.de/
     background-image: none !important;
     color: white;
 }
-input[type=submit] {
+.wpcf7-form input[type=submit] {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 110%;
@@ -34,8 +34,20 @@ input[type=submit] {
     border-radius: 0;
 	}
 
-input, textarea {
-		width: 100%;}
+.wpcf7-form input{
+        width: 100%;}
+
+.wpcf7-form input[type=checkbox]{
+    margin-right: 40px;
+    width: 15px;
+}
+
+.wpcf7-form input[type=checkbox]{
+    width: auto;
+}
+
+.wpcf7-form input{
+    width: 100%;}
 	
 input.wpcf7-form-control.wpcf7-text {
     height: 30px;
