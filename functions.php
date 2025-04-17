@@ -44,6 +44,7 @@ function custom_enqueue_assets() {
 			null,
 			$theme_version
 		);
+		
 
 	}
 
@@ -54,6 +55,14 @@ function custom_enqueue_assets() {
 		null,
 		$theme_version
 	);
+	// Styles for Contact Form 7
+	wp_enqueue_style(
+		'cf7-sd-style',
+		get_stylesheet_directory_uri() . '/css/style-cf7.css',
+		null,
+		$theme_version
+	);
+	
 
 	// Add inline style sheet.
 	$inline_styles = '';
